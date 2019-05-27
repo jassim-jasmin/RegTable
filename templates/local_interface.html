@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Datatables Example</title>
+
+</head>
+
+ <form action = "http://192.168.15.63:3225/process" method = "post">
+     <p><label>Schema name</label>  <input type="text" value="mo_dallas_rawdata" name="sql_schema"></p>
+     <p><label>SQL table name</label>   <input type="text" value="mj_b_building2" name="sql_table_name"></p>
+     <p>label>SQL Column ID</label> <input type="text" value="building_record_id" name="sql_idColumnName"></p>
+     <p><label>SQL Column name</label> <input type="text" value="assessors_parcel_number" name="sql_columnName"></p>
+     <p><label>SQL Column name(out)</label> <input type="text" value="assessors_parcel_number1" name="sql_eColumnName"></p>
+     <p><label>SQL Condition</label> <input type="=text" value="assessors_parcel_number is not null and assessors_parcel_number1 is null" name="sql_condition"></p>
+     <p><label>python regular expression ()</label> <input type="text" value="(^\d)" name="regexp"></p>
+     <p><label>rGroup</label> <input type="text" value="1" name="group"></p>
+     <p><label>Option</label> <input type="text" value="s" name="op"></p>
+     <p><label>Replace string(only for option r)</label> <input type="text" name="rstring"></p>
+     <p><input type="submit" name = "submit" value="Ok" ></p>
+      </form>
+
+</html>
